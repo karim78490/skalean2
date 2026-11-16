@@ -17,7 +17,11 @@
     "description": "Skalean turns AI complexity into reliable, governed and actionable decisions.",
     "primaryCta": "Discover Skalean",
     "secondaryCta": "Explore our solutions",
-    "proof": ["Sovereign data", "Trusted AI", "Business performance"]
+    "proof": [
+      "Sovereign data",
+      "Trusted AI",
+      "Business performance"
+    ]
   },
   "intro": {
     "eyebrow": "A NEW SCALE",
@@ -28,7 +32,7 @@
     "label": "Skalean products",
     "eyebrow": "THE SKALEAN SUITE",
     "title": "Two building blocks. One shared standard.",
-    "description": "From semantic protection to risk management, Skalean supports organisations that want to move forward with confidence.",
+    "description": "From semantic protection to simplified reporting, Skalean supports organisations that want to move forward with confidence.",
     "discoverCta": "Discover the solution",
     "items": [
       {
@@ -39,20 +43,75 @@
       },
       {
         "name": "PowerCockpit",
-        "tag": "DATA RISK MANAGEMENT",
-        "description": "Gives executive teams a clear view of data risks, usage and value created.",
-        "detail": "Make faster decisions with the right signals at the right time."
+        "tag": "SIMPLIFIED REPORTING",
+        "description": "Brings all your reports together in one clear, intuitive interface, so you find the right information in seconds.",
+        "detail": "No more hunting for files: reporting that finally makes sense."
       }
-    ]
+    ],
+    "visuals": {
+      "chablayer": {
+        "inputLabel": "User prompt",
+        "inputBefore": "Summarise the contract of ",
+        "name": "John Smith",
+        "inputMiddle": ", IBAN ",
+        "iban": "FR76 3000 6000 0112",
+        "filterLabel": "ChabLayer filtering",
+        "outputLabel": "Sent to the AI model",
+        "nameToken": "[CLIENT_1]",
+        "ibanToken": "[IBAN_1]",
+        "stat": "2 sensitive items masked"
+      },
+      "powercockpit": {
+        "shortcut": "⌘ K",
+        "query": "sales",
+        "categories": [
+          "All",
+          "Sales",
+          "Finance",
+          "HR"
+        ],
+        "activeCategory": 1,
+        "reports": [
+          {
+            "name": "Sales by region — Q3",
+            "meta": "Updated 2 h ago",
+            "favorite": true
+          },
+          {
+            "name": "Sales pipeline",
+            "meta": "Updated this morning",
+            "favorite": false
+          },
+          {
+            "name": "Targets vs actuals",
+            "meta": "Updated yesterday",
+            "favorite": false
+          }
+        ],
+        "stat": "All your reports, one single entry point"
+      }
+    }
   },
   "howItWorks": {
     "eyebrow": "HOW IT WORKS",
     "title": "From controlled data to informed decisions",
     "description": "A clear approach to turning trust challenges into drivers of growth.",
     "steps": [
-      { "number": "01", "title": "Map", "description": "Identify your data assets, AI use cases and the areas that need your attention." },
-      { "number": "02", "title": "Protect", "description": "Apply semantic and operational safeguards that fit your context." },
-      { "number": "03", "title": "Manage", "description": "Track risks and progress in a cockpit designed to support confident decisions." }
+      {
+        "number": "01",
+        "title": "Map",
+        "description": "Identify your data assets, AI use cases and the areas that need your attention."
+      },
+      {
+        "number": "02",
+        "title": "Protect",
+        "description": "Apply semantic and operational safeguards that fit your context."
+      },
+      {
+        "number": "03",
+        "title": "Manage",
+        "description": "Find all your reports in one place, in a simple, clear cockpit that helps you decide with confidence."
+      }
     ]
   },
   "manifesto": {
@@ -78,6 +137,9 @@
     "legalNotice": "Legal notice",
     "privacyPolicy": "Privacy policy",
     "copyright": "© 2026 Skalean. All rights reserved.",
-    "links": ["Legal notice", "Privacy policy"]
+    "links": [
+      "Legal notice",
+      "Privacy policy"
+    ]
   }
 }

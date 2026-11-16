@@ -17,7 +17,11 @@
     "description": "Skalean transforme la complexité de l'IA en décisions fiables, gouvernées et directement actionnables.",
     "primaryCta": "Découvrir Skalean",
     "secondaryCta": "Voir nos solutions",
-    "proof": ["Données souveraines", "IA de confiance", "Performance métier"]
+    "proof": [
+      "Données souveraines",
+      "IA de confiance",
+      "Performance métier"
+    ]
   },
   "intro": {
     "eyebrow": "UNE NOUVELLE ÉCHELLE",
@@ -28,7 +32,7 @@
     "label": "Produits Skalean",
     "eyebrow": "LA SUITE SKALEAN",
     "title": "Deux briques. Une même exigence.",
-    "description": "De la protection sémantique au pilotage des risques, Skalean accompagne les organisations qui veulent avancer avec confiance.",
+    "description": "De la protection sémantique au reporting simplifié, Skalean accompagne les organisations qui veulent avancer avec confiance.",
     "discoverCta": "Découvrir la solution",
     "items": [
       {
@@ -39,20 +43,75 @@
       },
       {
         "name": "PowerCockpit",
-        "tag": "PILOTAGE DES RISQUES DATA",
-        "description": "Donne au COMEX une vision claire des risques, des usages et de la valeur créée par la donnée.",
-        "detail": "Décidez plus vite, avec les bons signaux au bon moment."
+        "tag": "REPORTING SIMPLIFIÉ",
+        "description": "Centralise tous vos rapports dans une interface claire et intuitive, pour retrouver la bonne information en quelques secondes.",
+        "detail": "Fini la chasse aux fichiers : votre reporting devient enfin lisible."
       }
-    ]
+    ],
+    "visuals": {
+      "chablayer": {
+        "inputLabel": "Prompt de l'utilisateur",
+        "inputBefore": "Résume le contrat de ",
+        "name": "Jean Dupont",
+        "inputMiddle": ", IBAN ",
+        "iban": "FR76 3000 6000 0112",
+        "filterLabel": "Filtrage ChabLayer",
+        "outputLabel": "Envoyé au modèle IA",
+        "nameToken": "[CLIENT_1]",
+        "ibanToken": "[IBAN_1]",
+        "stat": "2 données sensibles masquées"
+      },
+      "powercockpit": {
+        "shortcut": "⌘ K",
+        "query": "ventes",
+        "categories": [
+          "Tous",
+          "Commercial",
+          "Finance",
+          "RH"
+        ],
+        "activeCategory": 1,
+        "reports": [
+          {
+            "name": "Ventes par région — T3",
+            "meta": "Mis à jour il y a 2 h",
+            "favorite": true
+          },
+          {
+            "name": "Pipeline commercial",
+            "meta": "Mis à jour ce matin",
+            "favorite": false
+          },
+          {
+            "name": "Objectifs vs réalisé",
+            "meta": "Mis à jour hier",
+            "favorite": false
+          }
+        ],
+        "stat": "Tous vos rapports, un seul point d'entrée"
+      }
+    }
   },
   "howItWorks": {
     "eyebrow": "COMMENT ÇA MARCHE",
     "title": "De la donnée sous contrôle aux décisions éclairées",
     "description": "Une approche lisible pour transformer vos enjeux de confiance en leviers de croissance.",
     "steps": [
-      { "number": "01", "title": "Cartographier", "description": "Identifiez vos actifs data, vos usages IA et les zones qui méritent votre attention." },
-      { "number": "02", "title": "Protéger", "description": "Appliquez des garde-fous sémantiques et opérationnels qui respectent votre contexte." },
-      { "number": "03", "title": "Piloter", "description": "Suivez les risques et les progrès dans un cockpit conçu pour décider sereinement." }
+      {
+        "number": "01",
+        "title": "Cartographier",
+        "description": "Identifiez vos actifs data, vos usages IA et les zones qui méritent votre attention."
+      },
+      {
+        "number": "02",
+        "title": "Protéger",
+        "description": "Appliquez des garde-fous sémantiques et opérationnels qui respectent votre contexte."
+      },
+      {
+        "number": "03",
+        "title": "Piloter",
+        "description": "Retrouvez tous vos rapports au même endroit, dans un cockpit simple et lisible pour décider sereinement."
+      }
     ]
   },
   "manifesto": {
@@ -78,7 +137,9 @@
     "legalNotice": "Mentions légales",
     "privacyPolicy": "Politique de confidentialité",
     "copyright": "© 2026 Skalean. Tous droits réservés.",
-    "links": ["Mentions légales", "Politique de confidentialité"]
+    "links": [
+      "Mentions légales",
+      "Politique de confidentialité"
+    ]
   }
 }
-                    

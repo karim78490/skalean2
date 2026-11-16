@@ -1,7 +1,7 @@
 'use client'
 
 import contentFr from '@/content/site-content.json'
-import { ArrowDownRight, ArrowRight, Menu, X } from 'lucide-react'
+import { ArrowDownRight, ArrowRight, BarChart3, Menu, Search, Star, X } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { ContactForm } from './contact-form'
@@ -68,7 +68,7 @@ export function SitePage({
         <div className="product-showcase">
           <div className="product-visual">
             <span className="visual-kicker">SKALEAN / 0{activeProduct + 1}</span>
-            <div className="product-logo-centered"><img src={activeMarkSrc} className="product-visual-logo" alt="" aria-hidden="true" /></div>
+            {activeProduct === 0 ? <ChabLayerVisual v={content.products.visuals.chablayer} /> : <PowerCockpitVisual v={content.products.visuals.powercockpit} />}
           </div>
           <div className="product-copy">
             <div className="product-copy-logo"><img src={activeMarkSrc} className="product-copy-logo-img" alt="" aria-hidden="true" /></div>
@@ -97,5 +97,54 @@ export function SitePage({
         <small>{content.footer.copyright}</small>
       </footer>
     </main>
+  )
+}
+
+type Visuals = SiteContent['products']['visuals']
+
+function ChabLayerVisual({ v }: { v: Visuals['chablayer'] }) {
+  return (
+    <div className="visual-body" aria-hidden="true">
+      <div className="visual-card">
+        <span className="visual-label">{v.inputLabel}</span>
+        <p>{v.inputBefore}<mark className="visual-sensitive">{v.name}</mark>{v.inputMiddle}<mark className="visual-sensitive">{v.iban}</mark></p>
+      </div>
+      <div className="visual-filter">
+        <span className="visual-filter-line" />
+        <span className="visual-filter-badge"><img src={productMarkSrcs[0]} alt="" />{v.filterLabel}</span>
+        <span className="visual-filter-line" />
+      </div>
+      <div className="visual-card visual-card-safe">
+        <span className="visual-label">{v.outputLabel}</span>
+        <p>{v.inputBefore}<span className="visual-token">{v.nameToken}</span>{v.inputMiddle}<span className="visual-token">{v.ibanToken}</span></p>
+      </div>
+      <span className="visual-stat"><span className="proof-dot" />{v.stat}</span>
+    </div>
+  )
+}
+
+function PowerCockpitVisual({ v }: { v: Visuals['powercockpit'] }) {
+  return (
+    <div className="visual-body" aria-hidden="true">
+      <div className="visual-search">
+        <Search />
+        <span className="visual-search-query">{v.query}</span>
+        <span className="visual-search-caret" />
+        <kbd className="visual-search-hint">{v.shortcut}</kbd>
+      </div>
+      <div className="visual-chips">
+        {v.categories.map((cat, i) => <span key={cat} className={i === v.activeCategory ? 'visual-chip active' : 'visual-chip'}>{cat}</span>)}
+      </div>
+      <div className="visual-card visual-reports">
+        {v.reports.map((r) => (
+          <div className="visual-report" key={r.name}>
+            <span className="visual-report-icon"><BarChart3 /></span>
+            <span className="visual-report-text"><strong>{r.name}</strong><small>{r.meta}</small></span>
+            <Star className={r.favorite ? 'visual-star active' : 'visual-star'} />
+          </div>
+        ))}
+      </div>
+      <span className="visual-stat"><span className="proof-dot" />{v.stat}</span>
+    </div>
   )
 }
