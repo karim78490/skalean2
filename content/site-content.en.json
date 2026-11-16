@@ -1,0 +1,83 @@
+{
+  "navigation": {
+    "label": "Main navigation",
+    "product": "Product",
+    "company": "Skalean",
+    "resources": "Resources",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "login": "Log in",
+    "cta": "Contact us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "DATA SOVEREIGNTY",
+    "title": "Data mastery at the scale of your ambition",
+    "description": "Skalean turns AI complexity into reliable, governed and actionable decisions.",
+    "primaryCta": "Discover Skalean",
+    "secondaryCta": "Explore our solutions",
+    "proof": ["Sovereign data", "Trusted AI", "Business performance"]
+  },
+  "intro": {
+    "eyebrow": "A NEW SCALE",
+    "title": "Useful AI starts with solid foundations.",
+    "description": "We design solutions that protect your data, secure your use of AI and give your teams the clarity they need to take action."
+  },
+  "products": {
+    "label": "Skalean products",
+    "eyebrow": "THE SKALEAN SUITE",
+    "title": "Two building blocks. One shared standard.",
+    "description": "From semantic protection to risk management, Skalean supports organisations that want to move forward with confidence.",
+    "discoverCta": "Discover the solution",
+    "items": [
+      {
+        "name": "ChabLayer",
+        "tag": "SEMANTIC PROTECTION",
+        "description": "Protects prompts and sensitive data before they reach your AI models.",
+        "detail": "A trusted layer between your teams and AI."
+      },
+      {
+        "name": "PowerCockpit",
+        "tag": "DATA RISK MANAGEMENT",
+        "description": "Gives executive teams a clear view of data risks, usage and value created.",
+        "detail": "Make faster decisions with the right signals at the right time."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "From controlled data to informed decisions",
+    "description": "A clear approach to turning trust challenges into drivers of growth.",
+    "steps": [
+      { "number": "01", "title": "Map", "description": "Identify your data assets, AI use cases and the areas that need your attention." },
+      { "number": "02", "title": "Protect", "description": "Apply semantic and operational safeguards that fit your context." },
+      { "number": "03", "title": "Manage", "description": "Track risks and progress in a cockpit designed to support confident decisions." }
+    ]
+  },
+  "manifesto": {
+    "eyebrow": "OUR CONVICTION",
+    "title": "Sovereignty is not a constraint. It is your competitive advantage.",
+    "description": "Skalean brings together data expertise, artificial intelligence and rigorous governance to build safer, higher-performing and more human systems.",
+    "link": "Our approach"
+  },
+  "contact": {
+    "eyebrow": "READY TO SCALE UP?",
+    "title": "Let’s talk about what your data can make possible.",
+    "cta": "Send message",
+    "email": "contact@skalean.fr",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sending": "Sending…",
+    "success": "Thank you, your message has been sent. We will get back to you shortly.",
+    "error": "Sending failed. Please try again or email us directly at"
+  },
+  "footer": {
+    "description": "Data sovereignty, AI performance.",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "copyright": "© 2026 Skalean. All rights reserved.",
+    "links": ["Legal notice", "Privacy policy"]
+  }
+}

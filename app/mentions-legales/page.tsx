@@ -1,6 +1,7 @@
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { LanguageSwitch } from '@/components/language-switch'
 
 export const metadata: Metadata = {
   title: 'Mentions légales — Skalean',
@@ -8,12 +9,13 @@ export const metadata: Metadata = {
 
 export default function MentionsLegales() {
   return (
-    <main style={{ background: 'var(--ivory)', minHeight: '100vh', color: 'var(--anthracite)', fontFamily: 'Arial, Helvetica, sans-serif' }}>
+    <main lang="fr" style={{ background: 'var(--ivory)', minHeight: '100vh', color: 'var(--anthracite)', fontFamily: 'Arial, Helvetica, sans-serif' }}>
       <header style={{ height: 76, display: 'flex', alignItems: 'center', padding: '0 clamp(22px,7vw,110px)', borderBottom: '1px solid rgba(38,34,31,.1)', background: 'rgba(247,245,242,.86)', backdropFilter: 'blur(16px)', position: 'sticky', top: 0 }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, color: 'var(--graphite)', textDecoration: 'none' }}>
           <ArrowLeft size={16} />
           Retour
         </Link>
+        <LanguageSwitch href="/en/legal-notice" language="en" />
         <span style={{ marginLeft: 'auto', fontSize: 20, fontWeight: 800, letterSpacing: '.19em' }}>SKALEAN</span>
       </header>
 
@@ -22,19 +24,19 @@ export default function MentionsLegales() {
         <h1 style={{ fontSize: 'clamp(36px,5vw,60px)', fontWeight: 400, letterSpacing: '-.05em', lineHeight: 1.02, marginBottom: 52 }}>Mentions légales</h1>
 
         <Section title="Éditeur du site">
-          <p>Le présent site internet est édité par la société <strong>Skalean</strong>, société par actions simplifiée (SAS) au capital de [montant] euros.</p>
-          <Row label="Siège social" value="[Adresse du siège social]" />
-          <Row label="SIRET" value="[Numéro SIRET]" />
-          <Row label="RCS" value="[Ville] [Numéro RCS]" />
-          <Row label="Directeur de publication" value="Adrien Bernard" />
+          <p>Le présent site internet est édité par la société <strong>Skalean</strong>, société par actions simplifiée (SAS) au capital de 100 euros.</p>
+          <Row label="Siège social" value="4 avenue des Ternes, 75017 Paris" />
+          <Row label="SIRET" value="999 243 520 00015" />
+          <Row label="RCS" value="Paris 999 243 520" />
+          <Row label="Directeur de publication" value="Karim Chaabouni" />
           <Row label="Contact" value="contact@skalean.fr" />
         </Section>
 
         <Section title="Hébergement">
           <p>Le site est hébergé par :</p>
-          <Row label="Hébergeur" value="Vercel Inc." />
-          <Row label="Adresse" value="340 Pine Street, Suite 701, San Francisco, CA 94104, États-Unis" />
-          <Row label="Site web" value="vercel.com" />
+          <Row label="Hébergeur" value="Ionos" />
+          <Row label="Adresse" value="7 Place de la Gare, 57200 Sarreguemines, France" />
+          <Row label="Site web" value="ionos.com" />
         </Section>
 
         <Section title="Propriété intellectuelle">
@@ -59,7 +61,8 @@ export default function MentionsLegales() {
         <span>© 2026 Skalean. Tous droits réservés.</span>
         <div style={{ display: 'flex', gap: 22 }}>
           <Link href="/mentions-legales" style={{ color: 'var(--greige)', textDecoration: 'none' }}>Mentions légales</Link>
-          <Link href="/confidentialite" style={{ color: 'var(--greige)', textDecoration: 'none' }}>Confidentialité</Link>
+          <Link href="/confidentialite" style={{ color: 'var(--greige)', textDecoration: 'none' }}>Politique de confidentialité</Link>
+          <Link href="/en/legal-notice" style={{ color: 'var(--greige)', textDecoration: 'none' }}>EN</Link>
         </div>
       </footer>
     </main>

@@ -1,12 +1,15 @@
 {
   "navigation": {
+    "label": "Navigation principale",
     "product": "Produit",
     "company": "Skalean",
     "resources": "Ressources",
     "solutions": "Solutions",
     "pricing": "Tarifs",
     "login": "Se connecter",
-    "cta": "Parler à un expert"
+    "cta": "Nous contacter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "hero": {
     "eyebrow": "SOUVERAINETÉ DES DONNÉES",
@@ -22,9 +25,11 @@
     "description": "Nous concevons des solutions qui protègent vos données, sécurisent vos usages et donnent à vos équipes la clarté nécessaire pour agir."
   },
   "products": {
+    "label": "Produits Skalean",
     "eyebrow": "LA SUITE SKALEAN",
     "title": "Deux briques. Une même exigence.",
     "description": "De la protection sémantique au pilotage des risques, Skalean accompagne les organisations qui veulent avancer avec confiance.",
+    "discoverCta": "Découvrir la solution",
     "items": [
       {
         "name": "ChabLayer",
@@ -53,18 +58,27 @@
   "manifesto": {
     "eyebrow": "NOTRE CONVICTION",
     "title": "La souveraineté n'est pas un frein. C'est votre avantage compétitif.",
-    "description": "Skalean réunit expertise data, intelligence artificielle et exigence de gouvernance pour créer des systèmes plus sûrs, plus performants et plus humains."
+    "description": "Skalean réunit expertise data, intelligence artificielle et exigence de gouvernance pour créer des systèmes plus sûrs, plus performants et plus humains.",
+    "link": "Notre approche"
   },
   "contact": {
     "eyebrow": "PRÊT À CHANGER D'ÉCHELLE ?",
     "title": "Parlons de ce que vos données peuvent rendre possible.",
-    "cta": "Prendre rendez-vous",
-    "email": "contact@skalean.fr"
+    "cta": "Envoyer le message",
+    "email": "contact@skalean.fr",
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "messageLabel": "Message",
+    "sending": "Envoi en cours…",
+    "success": "Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.",
+    "error": "L'envoi a échoué. Réessayez ou écrivez-nous directement à"
   },
   "footer": {
     "description": "Souveraineté des données, performance de l'IA.",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
     "copyright": "© 2026 Skalean. Tous droits réservés.",
-    "links": ["Mentions légales", "Confidentialité"]
+    "links": ["Mentions légales", "Politique de confidentialité"]
   }
 }
                     
